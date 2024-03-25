@@ -21,8 +21,9 @@ const LoginPage = ({SetUserName ,SetEmail,SetToken}) => {
 
     const onSubmit = async (values) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/user/login', values);
-            // const res = await axios.post('https://password-reset-task-backend.onrender.com/api/user/login',values);
+            // const res = await axios.post('http://localhost:5000/api/user/login', values);
+            const res = await axios.post('https://url-shortener-backend-vx4e.onrender.com/api/user/login', values);
+           
             setResponseMsg(res.data.message);
             SetUserName(res.data.data.lastname); // for displaying user name in home page
             SetEmail(values.email) //passing values

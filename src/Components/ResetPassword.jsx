@@ -16,8 +16,9 @@ const ResetPassword = () => {
 
     const validateToken = async () => {
         try {
-            let res = await axios.get('http://localhost:5000/api/user/listallusers');
-            //  let res = await axios.get('https://password-reset-task-backend.onrender.com/api/user/listallusers');
+            // let res = await axios.get('http://localhost:5000/api/user/listallusers');
+            let res = await axios.get('https://url-shortener-backend-vx4e.onrender.com/api/user/listallusers');
+            
             if (res.data && res.data.users) {
                 const reqUser = res.data.find((user) => user.email === email)
                 if (reqUser) {
@@ -45,8 +46,9 @@ const ResetPassword = () => {
     
     const onSubmit = async (values) => {
         try {
-            const res = await axios.put('http://localhost:5000/api/user/resetpassword', { ...values, email });
-            // const res = await axios.put('https://password-reset-task-backend.onrender.com/api/user/resetpassword',{...values,email});
+            // const res = await axios.put('http://localhost:5000/api/user/resetpassword', { ...values, email });
+            const res = await axios.put('https://url-shortener-backend-vx4e.onrender.com/api/user/resetpassword', { ...values, email });
+
             setResponseMsg(res.data.message);
             toast.success(res.data.message)
             navigate('/login')

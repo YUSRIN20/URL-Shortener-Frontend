@@ -19,8 +19,9 @@ const UrlShortener = ({ email ,token,}) => {
     });
     const onSubmit = async (values) => {
         try {
-            const res = await axios.post(`http://localhost:5000/api/user/shorturl/${email}`, values);
-            // const res  = await axios.post('https://password-reset-task-backend.onrender.com/api/user/forgotpassword',values);
+            // const res = await axios.post(`http://localhost:5000/api/user/shorturl/${email}`, values);
+            const res = await axios.post(`https://url-shortener-backend-vx4e.onrender.com/api/user/shorturl/${email}`, values);
+            
             setResponseMsg(res.data.message);
             setShortUrl(res.data.shortUrl)
             // console.log("=>", res.data.shortUrl);
@@ -69,7 +70,8 @@ const UrlShortener = ({ email ,token,}) => {
                     </div>
                     <div>
                         <h3>
-                            <a href={`http://localhost:5000/api/user/shortid/${shortUrl}`} target="_blank">{shortUrl}</a>
+                            {/* <a href={`http://localhost:5000/api/user/shortid/${shortUrl}`} target="_blank">{shortUrl}</a> */}
+                            <a href={`https://url-shortener-backend-vx4e.onrender.com/api/user/shortid/${shortUrl}`} target="_blank">{shortUrl}</a>
                         </h3>
                     </div>
                 </div>
