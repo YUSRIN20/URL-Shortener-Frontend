@@ -60,7 +60,7 @@ const ForgotPasswordPage = () => {
                         <button type="submit" class="btn btn-primary">Submit</button>
                         {/* <Link to='/'>Register</Link> 
                     <Link to='/login'>Login</Link> */}
-                    <Link to='/resetpassword'>reset</Link>
+                    {/* <Link to='/resetpassword'>reset</Link> */}
                         <p class="social-text">Or Reset Password with social platforms</p>
                         <div class="social-media">
                             <a href="#" class="social-icon">

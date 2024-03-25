@@ -3,7 +3,7 @@ import React from 'react';
 const CreatedUrls = ({ responseData }) => {
     console.log(responseData);
     return (
-        <div className='container-lg'>
+        <div>
             <h1 className='text-center'>Created Urls </h1>
             <div className='table-responsive'>
                 <table className="table table-striped mt-5">
