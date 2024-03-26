@@ -418,10 +418,10 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
-  .nav-btns{
+  /* .nav-btns{
     display: flex;
     justify-content: center;
-  }
+  } */
   span{
     display: none;
   }
