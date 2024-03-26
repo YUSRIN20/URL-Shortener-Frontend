@@ -382,13 +382,13 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
-  .nav-btns{
+  /* .nav-btns{
     display: flex;
     justify-content: center;
   }
   .logout-button{
     margin-right: 2em;
-  }
+  } */
   span{
     display: none;
   }
