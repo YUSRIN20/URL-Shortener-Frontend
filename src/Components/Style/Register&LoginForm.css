@@ -382,6 +382,16 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
+  .nav-btns{
+    display: flex;
+    justify-content: center;
+  }
+  .logout-button{
+    margin-right: 2em;
+  }
+  span{
+    display: none;
+  }
 }
 
 @media (max-width: 570px) {
@@ -400,12 +410,22 @@ form.sign-in-form {
   }
 
   .container:before {
-    bottom: 72%;
+    bottom: 77.5%;
     left: 50%;
   }
 
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
+  }
+  .nav-btns{
+    display: flex;
+    justify-content: center;
+  }
+  span{
+    display: none;
+  }
+  .logout-button{
+    margin-right: 2em;
   }
 }

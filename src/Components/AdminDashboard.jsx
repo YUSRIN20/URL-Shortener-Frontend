@@ -62,7 +62,7 @@ const AdminDashboard = ({ token, setResponseData }) => {
                 )}
                 {showUrlDashboardButton && (
                     <div className='mx-4'>
-                        <button className='btn' style={{ width: "auto" }} onClick={handleCheck}>URL-Dashboard</button>
+                        <button className='btn' style={{ width: "auto" }} onClick={handleCheck}>URL Dashboard</button>
                     </div>
                 )}
             </div>
