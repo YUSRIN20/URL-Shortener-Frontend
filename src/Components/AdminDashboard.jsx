@@ -14,8 +14,8 @@ const AdminDashboard = ({ token, setResponseData }) => {
             // const res = await axios.get('http://localhost:5000/api/user/authorized', {
             const res = await axios.get('https://url-shortener-backend-vx4e.onrender.com/api/user/authorized', {
                 headers: {
-                    Authorization: `Bearer ${token}` //2nd method
-                    // Authorization: token //1st method
+                    Authorization: `Bearer ${token}` 
+    
                 }
             });
             setResponseData(res.data.data);
@@ -35,8 +35,7 @@ const AdminDashboard = ({ token, setResponseData }) => {
             // const res = await axios.get('http://localhost:5000/api/user/authorized', {
             const res = await axios.get('https://url-shortener-backend-vx4e.onrender.com/api/user/authorized', {
                 headers: {
-                    Authorization: `Bearer ${token}` //2nd method
-                    // Authorization: token //1st method
+                    Authorization: `Bearer ${token}` 
                 }
             });
             setResponseData(res.data.data);

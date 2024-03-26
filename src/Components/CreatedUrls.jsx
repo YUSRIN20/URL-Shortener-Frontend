@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CreatedUrls = ({ responseData }) => {
-    console.log(responseData);
     return (
         <div>
             <h1 className='text-center'>Created Urls </h1>

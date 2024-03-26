@@ -14,10 +14,16 @@ const NavBar = () => {
         navigate('/home');
         setShowAdminButton(true);
     };
-    const handleClick = () =>{
-        navigate('/login')
-    }
 
+    const handleLogout = () =>{
+        // Clear LocalStorage items related to authentication
+        localStorage.removeItem('token')
+        localStorage.removeItem('username')
+        localStorage.removeItem('email')
+
+        navigate('/login')
+    
+    }
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -30,10 +36,10 @@ const NavBar = () => {
                         {showAdminButton && <button className='btn btn-primary mx-5' style={{ width: "auto" }} onClick={handleView}>Admin Dashboard</button>}
                         {!showAdminButton && <button className='btn btn-primary mx-5' onClick={handleNavigate}>Home</button>}
                     </div>
-                    <button className='btn text-center' style={{ backgroundColor: "rgb(237, 57, 57)" }} onClick={handleClick}><i className="fa-solid fa-power-off"></i></button>
+                    <button className='btn text-center' style={{ backgroundColor: "rgb(237, 57, 57)" }} onClick={handleLogout}><i className="fa-solid fa-power-off"></i></button>
                 </div>
             </div>
-        </nav>
+        </nav> 
     );
 };
 
