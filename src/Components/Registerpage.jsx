@@ -138,8 +138,14 @@ const Registerpage = () => {
                     <div class="panel left-panel">
                         <div class="content">
                             <h3>One of us ?</h3>
-                            <p>
+                            <p className='login-instruction'>
                                 Enter your email and password to log in to your account.
+                                <br />
+                                <br />
+                               <span className='text-warning mx-2'><i class="fa-solid fa-triangle-exclamation"></i></span> 
+                               <span className='text-warning warning-message' >
+                                Note: If you want to view the admin dashboard, kindly ensure that your role is set as admin
+                                </span>
                             </p>
                             <button class="btn transparent" id="sign-in-btn" onClick={toggleMode} >
                                 Sign in

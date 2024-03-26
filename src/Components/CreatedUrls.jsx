@@ -3,9 +3,9 @@ import React from 'react';
 const CreatedUrls = ({ responseData }) => {
     return (
         <div>
-            <h1 className='text-center'>Created Urls </h1>
+            <h1 className='text-center my-5'>Created Urls </h1>
             <div className='table-responsive'>
-                <table className="table table-striped mt-5">
+                <table className="table table-striped ">
                     <thead>
                         <tr>
                             {/* <th scope="col">S.No</th> */}

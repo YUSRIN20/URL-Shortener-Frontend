@@ -32,7 +32,7 @@ const UrlDashboard = () => {
 
     return (
         <div>
-            <h2>Daily Counts</h2>
+            <h2 className='my-5 text-center'>Daily Counts</h2>
             {/* <ul>
                 {dailyCounts.map((item, index) => (
                     <li key={index}>
@@ -49,7 +49,7 @@ const UrlDashboard = () => {
                 ))}
             </ul> */}
             <div className='table-responsive'>
-                <table className="table table-striped mt-5">
+                <table className="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -63,7 +63,7 @@ const UrlDashboard = () => {
                             return (
                                     <tr key={index}>
                                         <th scope="row">{index + 1}</th>
-                                        <td className='text-center'>{item._id.lastname}</td>
+                                        <td className='text-center '>{item._id.lastname}</td>
                                         <td className='text-center'>{item.count}</td>
                                         <td className='text-center'>{item._id.date}</td>
                                     </tr>
@@ -72,9 +72,9 @@ const UrlDashboard = () => {
                     </tbody>
                 </table>
             </div>
-            <h2>Monthly Count</h2>
+            <h2 className='my-5 text-center'>Monthly Count</h2>
             <div className='table-responsive'>
-                <table className="table table-striped mt-5">
+                <table className="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
