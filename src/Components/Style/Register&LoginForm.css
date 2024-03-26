@@ -425,7 +425,7 @@ form.sign-in-form {
   span{
     display: none;
   }
-  .logout-button{
+  /* .logout-button{
     margin-right: 2em;
-  }
+  } */
 }
